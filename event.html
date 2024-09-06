@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>Alumni Connect</title>
+    <link rel="stylesheet" href="event.css">
+    <style>
+        body{
+            background-image: url(296.jpg);
+            background-repeat: no-repeat ;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="event-container">
+            <h1>Create an Event</h1>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="eventName">Event Name</label>
+                    <input type="text" id="eventName" placeholder="Enter the event name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventDescription">Event Description</label>
+                    <textarea id="eventDescription" placeholder="Describe the event" required></textarea>
+                </div>
+                
+                <button type="submit">Create Event</button>
+            </form>
+        </div>
+    
+        <div class="collaboration-container">
+            <h1>Collaborate with Others</h1>
+            <form id="collaborationForm">
+                <div class="form-group">
+                    <label for="collaboratorName">Collaborator Name</label>
+                    <input type="text" id="collaboratorName" placeholder="Enter collaborator's name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="collaboratorEmail">Collaborator Email</label>
+                    <input type="email" id="collaboratorEmail" placeholder="Enter collaborator's email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="collaborationDetails">Collaboration Details</label>
+                    <textarea id="collaborationDetails" placeholder="Describe the collaboration" required></textarea>
+                </div>
+                
+                <button type="submit">Collaborate</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="confirmationMessage" class="confirmation-message">
+        <h2>Thank You!</h2>
+        <p>Your event has been created, and collaboration details have been sent.</p>
+    </div>
+    
+</body>
+</html>

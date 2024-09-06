@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="companies.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Company Alumni Profiles</h1>
+        </header>
+
+        <section class="companies">
+            <h2>Select a Company</h2>
+            <div class="company-list">
+                <button class="company-btn" onclick="showProfiles('company1')">Infosys</button>
+                <button class="company-btn" onclick="showProfiles('company2')">Google</button>
+                <button class="company-btn" onclick="showProfiles('company3')">Accenture</button>
+                <button class="company-btn" onclick="showProfiles('company4')">Wipro</button>
+                <button class="company-btn" onclick="showProfiles('company5')">Oracle</button>
+                <button class="company-btn" onclick="showProfiles('company6')">Deloitte</button>
+            </div>
+        </section>
+
+        <section class="profiles">
+            <h2>Alumni Profiles</h2>
+            <div id="profile-container">
+                <!-- Profiles will be displayed here dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="companies.js"></script>
+</body>
+</html>
+
+
+
